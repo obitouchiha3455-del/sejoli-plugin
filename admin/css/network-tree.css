@@ -1,0 +1,39 @@
+/* style for pohon jaringan */
+
+#network-tree-area .jstree-container-ul .jstree-node {
+    margin-bottom: 0;
+  }
+  #network-tree-area .jstree-container-ul .jstree-node .jstree-anchor {
+    padding: 10px;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  #network-tree-area .jstree-container-ul .jstree-node .jstree-anchor span.checked-user {
+    font-weight: 600;
+    color: #d63638;
+  }
+
+  #network-tree-area .jstree-container-ul .jstree-node .jstree-anchor .jstree-icon {
+    margin-right: 8px;
+    background-size: cover !important;
+  }
+  #network-tree-area .jstree-container-ul .jstree-node .jstree-children .jstree-node {
+    position: relative;
+  }
+  #network-tree-area .jstree-container-ul .jstree-node .jstree-children .jstree-node::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    display: block;
+    content: " ";
+    background-position: -292px -4px;
+    background-repeat: repeat-y;
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.10/themes/default/32px.png");
+    min-height: 10px;
+    line-height: 10px;
+    min-width: 24px;
+  }
+
+  

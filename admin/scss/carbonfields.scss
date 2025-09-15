@@ -1,0 +1,164 @@
+$color-main: #00a400;
+$color-success : #2980b9;
+$color-error : #e74c3c;
+
+
+.carbon-theme-options {
+    #poststuff #post-body.columns-2 {
+        margin-right: 150px;
+        #postbox-container-1 {
+            margin-right: -155px;
+            width : 135px;
+
+            .postbox {
+                min-width : 135px;
+                input[type=submit] {
+                    background-color: $color-main!important;
+                    border-color: darken($color-main, 10%)!important;
+                    color : darken($color-main,20%)!important;
+
+                    &[disabled] {
+                        border-color: lighten($color-main, 30%)!important;
+                        background-color: lighten($color-main,40%)!important;
+                        color:lighten($color-main,10%)!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.postbox.carbon-box {
+    .cf-container__fields { align-content: baseline;}
+
+    .cf-container-post-meta,
+    .cf-container-theme-options {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        .cf-container__tabs {
+            width: 180px;
+            padding: 0;
+            li {
+                display: block;
+                margin: 0;
+                background-color: #fafafa;
+                width:100%;
+                border-right-width: 0!important;
+                color : $color-main;
+                background-color: #eeeeee;
+                border-left-width: 0!important;
+                border-top-width: 0!important;
+
+                &.cf-container__tabs-item--current {
+                    color: #ffffff;
+                    background: darken($color-main,10%);
+                    border-bottom-color:#e5e5e5;
+                }
+            }
+        }
+        .cf-container__fields {
+            width: calc(100% - 180px);
+            border-left:1px solid #e5e5e5;
+        }
+
+        .cf-field.main-title {
+            &.cf-separator {
+                h3 {
+                    margin: 0;
+                    color:white;
+                }
+                background-color: darken($color-main,10%);
+            }
+            &.cf-checkbox {
+                label {
+                    color : darken($color-main, 10%);
+                    font-weight: bold;
+                }
+                border-top: 1px solid darken($color-main, 10%);
+                border-bottom: 1px solid darken($color-main, 10%);
+                background-color: #eeeeee;
+            }
+        }
+
+        .cf-field.cf-separator {
+            max-height: 75px;
+            h3 {
+                margin: 0;
+                color: $color-main;
+            }
+
+        }
+    }
+
+    .sejoli-metabox {
+        .cf-field {
+            border-width: 0;
+            &.cf-separator {
+                background-color: #eeeeee;
+                padding-bottom: 10px;
+                border-top:1px solid #ddd;
+                border-bottom:1px solid #ddd;
+                .cf-field__body {
+                    h3 {
+                        margin: 0;
+                        line-height:100%;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        text-shadow: 1px 1px 2px #fff;
+                    }
+                }
+
+                + .carbon-field {
+                    border-top-width: 0;
+                }
+            }
+        }
+    }
+}
+
+.sejoli-html-message {
+    padding: 10px 20px 1.4em;
+    border: 1px solid #eee;
+    p {
+        margin-top: 10px;
+        margin-bottom: 0
+    }
+    &.info {
+        border-left-width: 4px;
+        border-left-color: $color-main;
+    }
+    &.error {
+        border-left-width: 4px;
+        border-left-color: $color-error;
+    }
+
+    &.success {
+        border-left-width: 4px;
+        border-left-color: $color-success;
+    }
+}
+
+.sejoli-with-help {
+    position: relative;
+
+    .cf-field__help {
+        position: absolute;
+        top : 8px;
+        right: 8px;
+        margin-top: 0;
+        a {
+            text-decoration: none;
+            color: $color-main;
+        }
+    }
+}
+
+.cf-field.cf-separator.hidden-separator {
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    visibility: hidden;
+}

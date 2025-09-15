@@ -1,0 +1,27 @@
+#bulk-notification-holder {
+    .inline.field {
+        label {
+            min-width: 130px;
+        }
+
+        input[type=text],
+        textarea {
+            width: 800px;
+            max-width: calc(100vw - 200px);
+        }
+    }
+    .editor {
+        display: none;
+        &.checkbox {
+            padding: 8px 0 8px 12px;
+            background-color: #eee;
+            border-bottom: 1px solid #666;
+        }
+    }
+
+
+
+    .bulk-content {
+        display: none;
+    }
+}

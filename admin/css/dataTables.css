@@ -1,0 +1,119 @@
+.ui.modals .ui.form {
+  padding: 20px;
+}
+.ui.modals .ui.form .actions {
+  padding-top: 20px;
+}
+
+.sejoli-table-wrapper .sejoli-form-action-holder {
+  padding: 10px 0;
+}
+.sejoli-table-wrapper .sejoli-form-action-holder .box {
+  float: left;
+  margin-right: 0.5rem;
+  margin-bottom: 10px;
+}
+.sejoli-table-wrapper .sejoli-form-action-holder:after {
+  clear: both;
+  content: " ";
+  float: none;
+  width: 100%;
+}
+.sejoli-table-wrapper .sejoli-chart-data {
+  position: relative;
+}
+.sejoli-table-wrapper .sejoli-update-order-holder {
+  position: relative;
+}
+.sejoli-table-wrapper .sejoli-update-order-holder .sejoli-update-order {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.sejoli-table-wrapper .sejoli-form-float {
+  width: 320px;
+  padding: 1rem;
+  position: absolute;
+  border: 1px solid #eeeeee;
+  background: white;
+  z-index: 1000;
+  border-radius: 4px;
+  display: none;
+}
+.sejoli-table-wrapper .sejoli-form-float .filter {
+  float: none;
+  margin: 0 0 0.5rem 0;
+}
+.sejoli-table-wrapper .sejoli-form-float .select2-hidden-accessible {
+  display: none;
+}
+.sejoli-table-wrapper .sejoli-form-float input[type=text] {
+  border-radius: 4px;
+  padding: 5px;
+}
+.sejoli-table-wrapper .sejoli-form-float .select2-container--default .select2-selection--single,
+.sejoli-table-wrapper .sejoli-form-float input[type=text] {
+  border-color: #eeeeee;
+}
+.sejoli-table-wrapper .sejoli-form-float > * {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.sejoli-table-wrapper .sejoli-form-filter {
+  position: relative;
+}
+.sejoli-table-wrapper .sejoli-form-filter .sejoli-form-float {
+  top: 40px;
+  right: 0;
+}
+.sejoli-table-wrapper .dataTable th.center, .sejoli-table-wrapper .dataTable td.center {
+  text-align: center;
+}
+.sejoli-table-wrapper .dataTable th.price, .sejoli-table-wrapper .dataTable td.price {
+  text-align: right;
+}
+.sejoli-table-wrapper .dataTable .ui.label.boxed {
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 130%;
+}
+
+.ui.divided.selection.list .item {
+  color: #222;
+}
+.ui.divided.selection.list .item .label.main {
+  min-width: 145px;
+  color: white;
+  text-align: left;
+}
+
+.ui.button {
+  height: auto !important;
+}
+
+.order-product-detail {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0;
+  color: #222;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.order-shipping-modal-holder .sejoli-shipping-detail > span {
+  display: block;
+  float: left;
+  padding: 5px;
+}
+.order-shipping-modal-holder .sejoli-shipping-detail > span.product_name {
+  padding-top: 10px;
+}
+.order-shipping-modal-holder .sejoli-shipping-detail > span.input, .order-shipping-modal-holder .sejoli-shipping-detail > span.no-need {
+  float: right;
+}
+.order-shipping-modal-holder .sejoli-shipping-detail > span.input label {
+  display: block;
+  padding: 0 0 5px 0;
+}

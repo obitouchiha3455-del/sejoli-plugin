@@ -1,0 +1,159 @@
+.carbon-theme-options #poststuff #post-body.columns-2 {
+  margin-right: 150px;
+}
+.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 {
+  margin-right: -155px;
+  width: 135px;
+}
+.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 .postbox {
+  min-width: 135px;
+}
+.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 .postbox input[type=submit] {
+  background-color: #00a400 !important;
+  border-color: #007100 !important;
+  color: #003e00 !important;
+}
+.carbon-theme-options #poststuff #post-body.columns-2 #postbox-container-1 .postbox input[type=submit][disabled] {
+  border-color: #3eff3e !important;
+  background-color: #71ff71 !important;
+  color: #00d700 !important;
+}
+
+.postbox.carbon-box .cf-container__fields {
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+}
+.postbox.carbon-box .cf-container-post-meta,
+.postbox.carbon-box .cf-container-theme-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-container__tabs,
+.postbox.carbon-box .cf-container-theme-options .cf-container__tabs {
+  width: 180px;
+  padding: 0;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-container__tabs li,
+.postbox.carbon-box .cf-container-theme-options .cf-container__tabs li {
+  display: block;
+  margin: 0;
+  background-color: #fafafa;
+  width: 100%;
+  border-right-width: 0 !important;
+  color: #00a400;
+  background-color: #eeeeee;
+  border-left-width: 0 !important;
+  border-top-width: 0 !important;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-container__tabs li.cf-container__tabs-item--current,
+.postbox.carbon-box .cf-container-theme-options .cf-container__tabs li.cf-container__tabs-item--current {
+  color: #ffffff;
+  background: #007100;
+  border-bottom-color: #e5e5e5;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-container__fields,
+.postbox.carbon-box .cf-container-theme-options .cf-container__fields {
+  width: calc(100% - 180px);
+  border-left: 1px solid #e5e5e5;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.main-title.cf-separator,
+.postbox.carbon-box .cf-container-theme-options .cf-field.main-title.cf-separator {
+  background-color: #007100;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.main-title.cf-separator h3,
+.postbox.carbon-box .cf-container-theme-options .cf-field.main-title.cf-separator h3 {
+  margin: 0;
+  color: white;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.main-title.cf-checkbox,
+.postbox.carbon-box .cf-container-theme-options .cf-field.main-title.cf-checkbox {
+  border-top: 1px solid #007100;
+  border-bottom: 1px solid #007100;
+  background-color: #eeeeee;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.main-title.cf-checkbox label,
+.postbox.carbon-box .cf-container-theme-options .cf-field.main-title.cf-checkbox label {
+  color: #007100;
+  font-weight: bold;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.cf-separator,
+.postbox.carbon-box .cf-container-theme-options .cf-field.cf-separator {
+  max-height: 75px;
+}
+.postbox.carbon-box .cf-container-post-meta .cf-field.cf-separator h3,
+.postbox.carbon-box .cf-container-theme-options .cf-field.cf-separator h3 {
+  margin: 0;
+  color: #00a400;
+}
+.postbox.carbon-box .sejoli-metabox .cf-field {
+  border-width: 0;
+}
+.postbox.carbon-box .sejoli-metabox .cf-field.cf-separator {
+  background-color: #eeeeee;
+  padding-bottom: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.postbox.carbon-box .sejoli-metabox .cf-field.cf-separator .cf-field__body h3 {
+  margin: 0;
+  line-height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #fff;
+}
+.postbox.carbon-box .sejoli-metabox .cf-field.cf-separator + .carbon-field {
+  border-top-width: 0;
+}
+
+.sejoli-html-message {
+  padding: 10px 20px 1.4em;
+  border: 1px solid #eee;
+}
+.sejoli-html-message p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.sejoli-html-message.info {
+  border-left-width: 4px;
+  border-left-color: #00a400;
+}
+.sejoli-html-message.error {
+  border-left-width: 4px;
+  border-left-color: #e74c3c;
+}
+.sejoli-html-message.success {
+  border-left-width: 4px;
+  border-left-color: #2980b9;
+}
+
+.sejoli-with-help {
+  position: relative;
+}
+.sejoli-with-help .cf-field__help {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin-top: 0;
+}
+.sejoli-with-help .cf-field__help a {
+  text-decoration: none;
+  color: #00a400;
+}
+
+.cf-field.cf-separator.hidden-separator {
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  visibility: hidden;
+}

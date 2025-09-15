@@ -1,0 +1,116 @@
+@import 'elements/grid';
+@import 'elements/card';
+@import 'elements/list';
+@import 'elements/label';
+@import 'elements/image';
+
+$color-orange: #FF6600;
+$color-green: #179822;
+$color-blue: #162B9E;
+$color-light-green: #40DF10;
+
+.sejoli-widgets {
+    img.circular {
+        max-height: 35px;
+        overflow: hidden;
+    }
+    .content {
+        width: calc(100% - 50px)!important;
+
+        .product-name {
+            display: inline-block;
+            width: calc(100% - 160px )!important;
+            line-height: 1.5;
+        }
+
+        .product-value {
+            max-width: 140px;
+            float:right;
+            font-weight:normal;
+            font-size:.8rem;
+        }
+    }
+}
+
+.sejoli-full-widget.ui.cards {
+    &.information {
+        &.ui.cards > .card { min-width: 0;}
+        &.daily {
+            .content {
+                padding: .75em;
+                &.value {
+                    background-color: white;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+            .content {
+                .header {
+                    color : white;
+                    text-align: center;
+                    line-height:100%;
+                    font-weight: normal;
+                }
+            }
+
+            .ui.card {
+                &.orange .content:first-child { background-color: $color-orange; }
+                &.green .content:first-child { background-color: $color-green; }
+                &.blue .content:first-child { background-color: $color-blue; }
+                &.light-green .content:first-child { background-color: $color-light-green; }
+            }
+        }
+
+        .ui.card {
+            border: none;
+            box-shadow: none;
+            .content {
+                border : none;
+            }
+        }
+
+        &.blocked,
+        &.monthly,
+        &.all {
+            .content {
+                padding: .625rem;
+                color: white;
+                &:first-child {
+                    padding-top: 1rem;
+                }
+                .header {
+                    color: white;
+                    font-weight: normal;
+                    font-size: 1.2rem
+                }
+
+                &.value {
+                    text-align: right;
+                    font-size: 1.2rem;
+                }
+            }
+            .ui.card {
+                &.orange { background-color: $color-orange; }
+                &.green { background-color: $color-green; }
+                &.blue { background-color: $color-blue; }
+                &.light-green { background-color: $color-light-green; }
+            }
+        }
+    }
+
+    &.acquisition {
+        table {
+            td,th {
+                text-align: left;
+                padding: 8px;
+                &.center { text-align: center; }
+                &.right { text-align: right; }
+            }
+
+            th {
+                background-color: #333;
+                color: white;
+            }
+        }
+    }
+}
