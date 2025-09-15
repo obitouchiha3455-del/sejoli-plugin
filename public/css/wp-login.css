@@ -1,0 +1,21 @@
+body.login div#login {
+  width: 360px;
+  max-width: 90%; }
+  body.login div#login form {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0;
+    padding: 1em 1em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15); }
+    body.login div#login form label {
+      font-size: 1em; }
+    body.login div#login form input[type=text], body.login div#login form input[type=email], body.login div#login form input[type=password] {
+      font-size: 1em;
+      line-height: 1.21428571em;
+      padding: .67857143em 1em; }
+  body.login div#login p.submit input#wp-submit {
+    width: 100%;
+    background-color: #00b5ad; }
+  body.login div#login p#nav, body.login div#login p#backtoblog {
+    text-align: center; }

@@ -1,0 +1,165 @@
+$proof-space: 8px;
+$photo-size: 56px;
+$popup-width: 300px;
+
+/* Animation */
+
+@keyframes sejolifadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes sejolifadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes sejolifadeInDown {
+    from {
+        transform: translate3d(0,-40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes sejolifadeInDown {
+    from {
+        transform: translate3d(0,-40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes sejolifadeOutDown {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,40px,0);
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes sejolifadeOutDown {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,40px,0);
+        opacity:0;
+    }
+}
+
+@keyframes sejolifadeOutUp {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,-40px,0);
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes sejolifadeOutUp {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,-40px,0);
+        opacity:0;
+    }
+}
+
+
+.social-proof-container {
+    border:none;
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+    width: 300px!important;
+    height:90px;
+    background-color: transparent;
+    z-index: 9999;
+
+    &.animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        opacity: 0;
+    }
+
+    &.sejolifadeInUp {
+        opacity: 0;
+        animation-name: sejolifadeInUp;
+        -webkit-animation-name: sejolifadeInUp;
+    }
+
+    &.sejolifadeOutDown {
+        opacity: 1;
+        animation-name: sejolifadeOutDown;
+        -webkit-animation-name: sejolifadeOutDown;
+    }
+
+    &.sejolifadeInDown {
+        opacity: 0;
+        animation-name: sejolifadeInDown;
+        -webkit-animation-name: sejolifadeInDown;
+    }
+
+    &.sejolifadeOutUp {
+        opacity: 1;
+        animation-name: sejolifadeOutUp;
+        -webkit-animation-name: sejolifadeOutUp;
+    }
+
+    &.top {
+        top: calc(1rem + 32px);
+        bottom: auto;
+    }
+
+    &.bottom {
+        top: auto;
+    }
+
+    &.left {
+        left: 1rem;
+        right: auto;
+    }
+
+    &.right {
+        left: auto;
+    }
+
+    &.center {
+        left: calc( (100vw - 300px ) / 2);
+    }
+
+    @import 'social-proof';
+}

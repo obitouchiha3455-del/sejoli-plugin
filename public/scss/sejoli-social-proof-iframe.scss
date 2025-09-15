@@ -1,0 +1,27 @@
+$proof-space: 8px;
+$photo-size: 56px;
+$popup-width: 300px;
+
+html {
+
+    font-family: Tahoma, sans-serif;
+    font-weight: normal;
+
+    @import 'social-proof';
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        .social-proof-container {
+            padding: 0;
+            margin: 0;
+
+            .social-proof-holder {
+                padding: 8px;
+                box-shadow: none;
+            }
+        }
+    }
+}

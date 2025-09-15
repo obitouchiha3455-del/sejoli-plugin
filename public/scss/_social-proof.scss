@@ -1,0 +1,37 @@
+.social-proof-holder {
+
+    background: white;
+    border-radius: 10px;
+    padding: $proof-space;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    display: flex;
+
+    .buyer-photo {
+        margin: 0 $proof-space 0 0;
+        width: $photo-size;
+        img {
+            width: $photo-size;
+            height:auto;
+        }
+    }
+
+    .buyer-detail {
+        width: 100%;
+    }
+
+    &.has-photo .buyer-detail {
+        width: calc(100% - #{$photo-size} - #{$proof-space} )
+    }
+
+    .buyer-text {
+        font-size: 14px;
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .order-text {
+        font-size: 10px;
+        font-style: italic;
+    }
+}

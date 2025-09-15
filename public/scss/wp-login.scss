@@ -1,0 +1,66 @@
+body.login {
+    div#login {
+        width: 360px;
+        max-width: 90%;
+        h1 {
+            a {
+
+            }
+        }
+
+        form {
+            box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+            margin: 1rem 0;
+            padding: 1em 1em;
+            border-radius: .28571429rem;
+            border: 1px solid rgba(34,36,38,.15);
+
+            label {
+                font-size: 1em;
+            }
+            input {
+                &[type=text],
+                &[type=email],
+                &[type=password] {
+                    font-size: 1em;
+                    line-height: 1.21428571em;
+                    padding: .67857143em 1em;
+                }
+                &#user_login {
+
+                }
+
+                &#user_pass {
+
+                }
+            }
+        }
+
+        p {
+            label {
+
+            }
+
+            &.forgetmenow {
+                input#rememberme {
+
+                }
+            }
+
+            &.submit {
+                input#wp-submit {
+                    width: 100%;
+                    background-color: #00b5ad;
+                }
+            }
+
+            &#nav,
+            &#backtoblog {
+                text-align: center;
+                a {
+
+                }
+            }
+        }
+    }
+}
